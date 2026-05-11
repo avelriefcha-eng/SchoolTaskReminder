@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>School Task Reminder</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background: #dbeafe;
+    margin: 0;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    color: #2563eb;
+}
+
+.container{
+    max-width: 500px;
+    margin: auto;
+}
+
+.card{
+    background: white;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+button{
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #1d4ed8;
+}
+
+.done{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>📚 School Task Reminder</h1>
+
+<div class="container">
+
+<div class="card">
+<h3 id="tugas1">Matematika</h3>
+<p>Deadline: Senin</p>
+<button onclick="selesai('tugas1')">Selesai</button>
+</div>
+
+<div class="card">
+<h3 id="tugas2">Kimia</h3>
+<p>Deadline: Rabu</p>
+<button onclick="selesai('tugas2')">Selesai</button>
+</div>
+
+<div class="card">
+<h3 id="tugas3">Bahasa Inggris</h3>
+<p>Deadline: Jumat</p>
+<button onclick="selesai('tugas3')">Selesai</button>
+</div>
+
+</div>
+
+<script>
+
+function selesai(id){
+    document.getElementById(id).classList.toggle("done");
+}
+
+</script>
+
+</body>
+</html>

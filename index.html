@@ -21,7 +21,7 @@ h1{
 }
 
 .container{
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -42,10 +42,6 @@ button{
     cursor: pointer;
 }
 
-button:hover{
-    background: #1d4ed8;
-}
-
 .done{
     text-decoration: line-through;
     opacity: 0.6;
@@ -61,21 +57,99 @@ button:hover{
 <div class="container">
 
 <div class="card">
-<h3 id="tugas1">Matematika</h3>
+<h3 id="t1">Matematika</h3>
 <p>Deadline: Senin</p>
-<button onclick="selesai('tugas1')">Selesai</button>
+<button onclick="selesai('t1')">Selesai</button>
 </div>
 
 <div class="card">
-<h3 id="tugas2">Kimia</h3>
+<h3 id="t2">Bahasa Indonesia</h3>
+<p>Deadline: Selasa</p>
+<button onclick="selesai('t2')">Selesai</button>
+</div>
+
+<div class="card">
+<h3 id="t3">Bahasa Inggris</h3>
 <p>Deadline: Rabu</p>
-<button onclick="selesai('tugas2')">Selesai</button>
+<button onclick="selesai('t3')">Selesai</button>
 </div>
 
 <div class="card">
-<h3 id="tugas3">Bahasa Inggris</h3>
+<h3 id="t4">Kimia</h3>
+<p>Deadline: Kamis</p>
+<button onclick="selesai('t4')">Selesai</button>
+</div>
+
+<div class="card">
+<h3 id="t5">Fisika</h3>
 <p>Deadline: Jumat</p>
-<button onclick="selesai('tugas3')">Selesai</button>
+<button onclick="selesai('t5')">Selesai</button>
+</div>
+
+<div class="card">
+<h3 id="t6">Biologi</h3>
+<p>Deadline: Senin</p>
+<button onclick="selesai('t6')">Selesai</button>
+</div>
+
+<div class="card">
+<h3 id="t7">Sejarah</h3>
+<p>Deadline: Selasa</p>
+<button onclick="selesai('t7')">Selesai</button>
+</div>
+
+<div class="card">
+<h3 id="t8">Geografi</h3>
+<p>Deadline: Rabu</p>
+<button onclick="selesai('t8')">Selesai</button>
+</div>
+
+<div class="card">
+<h3 id="t9">Ekonomi</h3>
+<p>Deadline: Kamis</p>
+<button onclick="selesai('t9')">Selesai</button>
+</div>
+
+<div class="card">
+<h3 id="t10">Sosiologi</h3>
+<p>Deadline: Jumat</p>
+<button onclick="selesai('t10')">Selesai</button>
+</div>
+
+<div class="card">
+<h3 id="t11">PPKn</h3>
+<p>Deadline: Senin</p>
+<button onclick="selesai('t11')">Selesai</button>
+</div>
+
+<div class="card">
+<h3 id="t12">Informatika</h3>
+<p>Deadline: Selasa</p>
+<button onclick="selesai('t12')">Selesai</button>
+</div>
+
+<div class="card">
+<h3 id="t13">Seni Budaya</h3>
+<p>Deadline: Rabu</p>
+<button onclick="selesai('t13')">Selesai</button>
+</div>
+
+<div class="card">
+<h3 id="t14">PJOK</h3>
+<p>Deadline: Kamis</p>
+<button onclick="selesai('t14')">Selesai</button>
+</div>
+
+<div class="card">
+<h3 id="t15">Agama</h3>
+<p>Deadline: Jumat</p>
+<button onclick="selesai('t15')">Selesai</button>
+</div>
+
+<div class="card">
+<h3 id="t16">Bahasa Jawa</h3>
+<p>Deadline: Senin</p>
+<button onclick="selesai('t16')">Selesai</button>
 </div>
 
 </div>
@@ -83,7 +157,7 @@ button:hover{
 <script>
 
 function selesai(id){
-    document.getElementById(id).classList.toggle("done");
+document.getElementById(id).classList.toggle("done");
 }
 
 </script>

@@ -1,2 +1,0 @@
-# SchoolTaskReminder
-Website Pengingat Tugas
